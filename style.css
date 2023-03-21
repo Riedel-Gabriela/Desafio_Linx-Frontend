@@ -1,0 +1,345 @@
+body {
+    top: 0px;
+    left: 0px;
+    width: 1500px;
+    height: 2444px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header {
+    position: static;
+    height: 399px;
+    background-color: #707070;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.triangle-header {
+    position: absolute;
+    width: 0px;
+    height: 210px;
+    border-left: 0px solid transparent;
+    border-right: 1500px solid transparent;
+    border-bottom: 100px solid #FFFFFF;
+}
+
+.firstline-header {
+    font: normal normal normal 20px/24px Helvetica;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.title-header {
+    font: normal normal bold 40px/49px Helvetica;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.subtitle-header {
+    font: normal normal normal 14px/16px Helvetica;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.buttons {
+    flex-flow: row nowrap;
+    display: flex;
+    width: 760px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 32px;
+}
+
+.buttons-header {
+    padding: 12px 32px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    color: #888888;
+    box-shadow: 0px 1px 6px #00000029;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-between;
+    font: normal normal normal 14px/16px Helvetica;
+    opacity: 1;
+
+}
+
+/*BODY PROPERTIES*/
+
+.body-mid {
+    display: flex;
+    width: 1250px;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 30px;
+    font: normal normal normal 12px/14px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.title-body {
+    margin-left: 290px;
+    width: 332px;
+    height: 23px;
+    text-align: left;
+    font: normal normal normal 20px/24px Helvetica;
+    color: #888888;
+    opacity: 1;
+}
+
+.text-body {
+    margin-left: 290px;
+    padding-top: 30px;
+    width: 520px;
+    height: 220px;
+    text-align: left;
+    font: normal normal normal 12px/18px Helvetica;
+    color: #888888;
+    opacity: 1;
+}
+
+input[type=text],
+input[type=submit],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #888888;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #FFFFFF;
+    color: #888888;
+    border: 1px solid #888888;
+    border-radius: 4px;
+}
+
+.radio-form {
+    padding: 10px 0px 20px
+}
+
+/*SEPARADOR SELEÇÃO ESPECIAL*/
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888888;
+    font: normal normal bold 18px/16px Helvetica;
+    margin-top: 80px;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #888888;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+    margin-left: 288px;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+    margin-right: 250px;
+}
+
+/*CARD PROPERTIES*/
+.card {
+    width: 950px;
+    max-height: 100%;
+    margin-top: 40px;
+    margin-bottom: 52px;
+    margin-left: 286px;
+    margin-right: 290px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+}
+
+.nome-produto {
+    width: 200px;
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.description-produto {
+    width: 200px;
+    text-align: left;
+    font: normal normal normal 12px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.valor-inicial {
+    width: 200px;
+    text-align: left;
+    font: normal normal normal 12px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.valor-promocional {
+    width: 200px;
+    text-align: left;
+    font: normal normal bold 16px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.valor-parcelado {
+    width: 200px;
+    text-align: left;
+    font: normal normal normal 12px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.card button {
+    width: 200px;
+    outline: 0;
+    padding: 12px;
+    color: #888888;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font: normal normal normal 16px/16px Helvetica;
+    font-size: 18px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/*BOTÃO PRÓXIMA PÁGINA*/
+
+.card-botao-texto {
+    margin-left: 620px;
+    max-width: 260px;
+    padding: 12px;
+    color: #888888;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font: normal normal normal 16px/16px Helvetica;
+    font-size: 18px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+/*TEXTO COMPARTILHAMENTO*/
+.texto-compartilhar {
+    margin-left: 43px;
+    margin-top: 44px;
+    margin-bottom: 20px;
+    text-align: center;
+    font: normal normal normal 14px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+/*FORMULÁRIO COMPARTILHAMENTO*/
+
+.form-compartilhamento {
+    margin-left: 400px;
+    margin-bottom: 50px;
+    width: 720px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-compartilhamento .box-form {
+    width: 340px;
+    height: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+}
+
+.form-compartilhamento .form-element {
+    text-align: left;
+    margin-top: 20px;
+    font: normal normal normal 12px/14px Helvetica;
+    color: #888888;
+    opacity: 1;
+}
+
+/*BOTÃO COMPARTILHAMENTO*/
+
+.compartilhamento-botao-texto {
+    margin-left: 620px;
+    margin-bottom: 72px;
+    max-width: 260px;
+    padding: 12px;
+    color: #888888;
+    text-align: center;
+    cursor: pointer;
+    font: normal normal normal 16px/16px Helvetica;
+    font-size: 18px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+/*FOOTER PROPERTIES*/
+.footer {
+    position: block;
+    height: 293px;
+    background-color: #707070;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-around
+}
+
+.text-footer {
+    text-align: center;
+    font: normal normal normal 12px/18px Helvetica;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.triangle-footer {
+    position: absolute;
+    width: 0px;
+    height: 193px;
+    border-left: 0px solid transparent;
+    border-right: 1500px solid transparent;
+    border-top: 100px solid #FFFFFF;
+}
