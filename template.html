@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio Linx</title>
+</head>
+
+<body onload="requisicao('//frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1')">
+    <!--Cabeçalho-->
+    <div class="header">
+
+        <div class="firstline-header">uma seleção de produtos</div>
+        <div class="title-header">especial para você</div>
+        <div class="subtitle-header">Todos os produtos desta lista foram selecionados a partir da sua navegação.
+            Aproveite!</div>
+        <div class="buttons">
+            <div class="buttons-header">
+                <div>Conheça a Linx</div>
+            </div>
+            <div class="buttons-header">
+                <div>Ajude o algorítimo</div>
+            </div>
+            <div class="buttons-header">
+                <div>Seus produtos</div>
+            </div>
+            <div class="buttons-header">
+                <div>Compartilhe</div>
+            </div>
+            <div class="triangle-header"></div>
+        </div>
+        <!--Texto meio-->
+    </div>
+    <div class="title-body">Ajude o algorítimo a ser mais certeiro</div>
+    <div class="body-mid">
+        <div class="text-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi
+                porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper
+                pretium
+                consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus
+                vulputate
+                tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per
+                conubia
+                nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique
+                eleifend.
+            </p>
+            <p>p>Morbi
+                eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem
+                ultricies,
+                pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis,
+                consequat
+                velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi
+                viverra,
+                magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.</p>
+        </div>
+        <!--Formulário de cadastro-->
+        <div class="form-container">
+            <form action="#">
+
+                <div class="row">
+                    <div class="form-element">
+                        <label for="name">Seu Nome:</label>
+                    </div>
+                    <div class="box-form">
+                        <input type="text" id="name" name="nome">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-element">
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <div class="box-form">
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-element">
+                        <label for="cpf">CPF:</label>
+                    </div>
+                    <div class="box-form">
+                        <input type="text" id="cpf" name="cpf">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-element">
+                        <div class="radio-form">
+                            <label>
+                                <input type="radio" checked="checked" name="sexo">Masculino
+                                <input type="radio" name="sexo">Feminino
+                                <input type="radio" name="sexo">Não-Binário
+                                <input type="radio" name="sexo">Não Informar
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="send-button">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Separador-->
+    <div class="separator">Sua seleção especial</div>
+    <!--Cartões de Produtos-->
+    <div class="card" id="card"></div>
+    <!--Botão próxima página-->
+    <div class="card-botao-texto" onclick="proximaPagina()">Ainda mais produtos aqui!</div>
+    <!--Separador-->
+    <div class="separator">Compartilhe a novidade</div>
+    <!--Texto Compartilhamento-->
+    <div class="texto-compartilhar">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
+    </div>
+    <!--Formulário Compartilhamento-->
+    <div class="form-compartilhamento">
+        <div class="form-item">
+            <div class="form-element">
+                <label for="name">Nome do seu amigo:</label>
+            </div>
+            <div class="box-form">
+                <input type="text" id="name" name="nome">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="form-element">
+                <label for="email">E-mail:</label>
+            </div>
+            <div class="box-form">
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+    </div>
+    <!--Botão Compartilhamento-->
+    <div class="compartilhamento-botao-texto">Enviar agora</div>
+    <!--Rodapé-->
+    <div class="footer">
+        <div class="text-footer">Testando suas habilidades em HTML, CSS e JS.<br>Linx Impulse<br>2019</div>
+        <div class="triangle-footer"></div>
+    </div>
+</body>
+
+</html>
