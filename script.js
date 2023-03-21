@@ -23,7 +23,7 @@ function appendData(arquivo) {
         cardDiv.innerHTML += `<p class="description-produto">${products[i].description}</p>`;
         cardDiv.innerHTML += `<p class="valor-inicial">De: R$${products[i].oldPrice},00</p>`;
         cardDiv.innerHTML += `<p class="valor-promocional">Por: R$${products[i].price},00</p>`;
-        cardDiv.innerHTML += `<p class="valor-parcelado">ou ${products[i].installments.count}x de R$${products[i].installments.value}0</p>`;
+        cardDiv.innerHTML += `<p class="valor-parcelado">ou ${products[i].installments.count}x de R$${products[i].installments.value}</p>`;
         cardDiv.innerHTML += `<p><button>Comprar</button></p>`
         mainContainer.appendChild(cardDiv);
     }
